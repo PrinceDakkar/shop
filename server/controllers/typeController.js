@@ -8,7 +8,7 @@ class TypeController {
         return res.json(type)
     }
     async getAll(req,res){
-        const types = await Type.findAll()
+        const types = await Type.findAndCountAll()
         return res.json(types)
     }
 }
