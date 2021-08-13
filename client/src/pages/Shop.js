@@ -1,10 +1,24 @@
 import React from 'react';
+import Container from "react-bootstrap/Container"
+import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
+import BrandBar from '../components/BrandBar';
+import TypeBar from '../components/TypeBar';
+import DeviceList from '../components/DeviceList';
 
 const Shop = () => {
     return (
-        <div>
-            shop
-        </div>
+        <Container>
+            <Row className="mt-2">
+                <Col md={3}>
+                    <TypeBar/>
+                </Col>
+                <Col md={9}>
+                    <BrandBar/>
+                    <DeviceList/>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 

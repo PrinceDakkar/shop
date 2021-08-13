@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Context } from "..";
+import { Context } from "../index";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
